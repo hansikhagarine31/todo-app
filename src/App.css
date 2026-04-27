@@ -1,0 +1,72 @@
+/* Center whole app */
+#center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Input + button */
+input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Filter buttons */
+button:nth-child(n+2) {
+  background-color: #555;
+}
+
+button:nth-child(n+2):hover {
+  background-color: #333;
+}
+
+/* Task list */
+#center > div:last-child {
+  margin-top: 20px;
+  width: 300px;
+}
+
+/* Each task */
+#center > div:last-child div {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#center > div:last-child div:hover {
+  background: #eaeaea;
+}
+
+/* Completed task */
+.line-through {
+  text-decoration: line-through;
+  color: gray;
+}
